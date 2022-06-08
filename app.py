@@ -48,7 +48,7 @@ def df_to_file(df):
 def create_contents(is_no_update, today, yesterday, today_df, yesterday_df):
     if (is_no_update):
         MSG = today + " 変更なし"
-        file = {'imageFile':None}
+        file = {'imageFile':df_to_file(today_df)}
         data = {'message': MSG}
     else:
         MSG = today + " 変更あり ！！ 注意！！"
